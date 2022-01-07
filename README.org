@@ -1,5 +1,3 @@
-#+title: Plantillas Concurrente: Para que hacer una cosa más de una vez? 
-#+AUTHOR: Rubén Palmer Pérez
+#+title: Plantillas Concurrente
 
-#+HTML:<a href="https://www.uib.eu//"><img alt="UIB logo" height="160" align = "left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Escut_UIB.svg/1058px-Escut_UIB.svg.png"></a>
 Repositorio de plantillas para interés legitimo y educativo.
