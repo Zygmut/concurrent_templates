@@ -24,7 +24,7 @@ class Process(threading.Thread):
     global NUM_THREADS, TOTAL_COUNT
     to_count = int(TOTAL_COUNT / NUM_THREADS)     
     
-    def __init__(self, num_thread):
+    def __init__(self):
         super().__init__()
 
     def run(self):
