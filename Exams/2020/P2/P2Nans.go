@@ -1,3 +1,5 @@
+//Pregunta 2 - Examen 2020-2021
+//By:PlatanosVerdes
 package main
 
 import (
