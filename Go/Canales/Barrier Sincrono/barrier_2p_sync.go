@@ -3,7 +3,7 @@
 /*  
 Comunicacion sincrona: el Remitente se bloquea
 si esta preparado para enviar y el Receptor
-no lo esta. Y viceversa
+no lo esta. Y viceversa.
 */
 
 package main
