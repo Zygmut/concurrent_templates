@@ -92,7 +92,6 @@ func work(name string) {
 
 func eats(name string) {
 	fmt.Println(name, "ja menja!!!!!")
-	//time.Sleep(500 * time.Millisecond)
 	time.Sleep(1 * time.Second)
 }
 
