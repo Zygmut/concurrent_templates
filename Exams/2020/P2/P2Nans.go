@@ -27,7 +27,7 @@ const (
 	MaxRandom = 10 // Numero minimo random
 )
 
-type Empty struct{}
+type remplace struct{}
 
 //Mayordomo
 func butler(name string, site chan string, eat chan string, standUp chan string) {
@@ -35,23 +35,23 @@ func butler(name string, site chan string, eat chan string, standUp chan string)
 	var chairs int = 0
 	var nowTitchy string
 	var lastTitchy string
-	var empty bool = true
+	var remplace bool = false
 
 	fmt.Println("******* Hola som el majordom:", name)
 
 	for {
-		//Si los sitios se han ocupado
+		//Si hay sitios
 		if chairs < ChairSites {
 			//Se usarane estos cases
 			select {
 			//Si un enanito quiere sientarse
 			case nowTitchy = <-site:
-				if empty {
+				if !remplace {
 					fmt.Println("******* El majordom fa seure a:", nowTitchy)
 				} else {
 					fmt.Println("******* El majordom fa seure a", nowTitchy, "a la cadira de", lastTitchy)
 					lastTitchy = ""
-					empty = true
+					remplace = false
 				}
 				chairs = chairs + 1
 
@@ -64,7 +64,7 @@ func butler(name string, site chan string, eat chan string, standUp chan string)
 				fmt.Println("******* El majordom dona permís per anar-se'n a:", nowTitchy)
 				chairs = chairs - 1
 				lastTitchy = nowTitchy //El enanito pasara a ser el ultimo enanito en ser despachado
-				empty = false
+				remplace = true
 			}
 		} else { //Si en la sala NO hay sitio para sentase
 			//Solo se utilizaran estos cases:
@@ -78,7 +78,7 @@ func butler(name string, site chan string, eat chan string, standUp chan string)
 				fmt.Println("+++++++ El majordom dona permís per anar-se'n a:", nowTitchy)
 				chairs = chairs - 1
 				lastTitchy = nowTitchy //El enanito pasara a ser el ultimo enanito en ser despachado
-				empty = false
+				remplace = true
 			}
 
 		}
@@ -96,7 +96,7 @@ func eats(name string) {
 }
 
 //Enanito
-func titchy(name string, site chan string, eat chan string, standUp chan string, done chan Empty) {
+func titchy(name string, site chan string, eat chan string, standUp chan string, done chan remplace) {
 	fmt.Println("Hola el meu nom és: ", name)
 
 	for i := 0; i < TimesToEat; i++ {
@@ -116,7 +116,7 @@ func titchy(name string, site chan string, eat chan string, standUp chan string,
 	}
 
 	fmt.Println(name, "se'n va a dormir")
-	done <- Empty{} //Exit
+	done <- remplace{} //Exit
 }
 
 func main() {
@@ -127,7 +127,7 @@ func main() {
 	eat := make(chan string)
 	standUp := make(chan string)
 
-	done := make(chan Empty, 1)
+	done := make(chan remplace, 1)
 
 	//Mayordomo
 	go butler("Alfred", site, eat, standUp)
