@@ -10,11 +10,11 @@ NUM_OXYGEN = 2  # Numero de oxigeno
 SYN_WATER = 4  # Numero de sintetizaciones
 CHARACTERS = 4  # Numero de caracteres a imprimir
 
-# 5
+# 5 canales
 hydrogen_union = threading.Lock()  # Semaforo de hidrogenos
 hydrogen_wait = threading.Lock()  # Semaforo que bloquea al primer hidrogeno
 hydrogens_block = threading.Lock() # Semaforo que bloquea a los hydrogenos miendras se sintetiza el Agua
-oxygen_wait = threading.Semaphore(0) # Semaforo que espera al segundo hidrogeno
+oxygen_wait = threading.Semaphore(0) # Semaforo contador que espera al segundo hidrogeno
 mutex_sim = threading.Lock() # Mutex para realizar la segunda simulacion
 
 second_hydrogen_wait = False #Variable para saber si ya ha entrado un hidrogeno o no
@@ -62,6 +62,7 @@ class oxygen(threading.Thread):
         super().__init__()
         self.type = (type % 2)
 
+    #Sintetizacion
     def syn(self):
         for i in range(SYN_WATER):
             if self.type == 0:
