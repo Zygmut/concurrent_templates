@@ -1,9 +1,7 @@
-import threading
-# Generar un int aleatorio
+import threading # Generar un int aleatorio
 from random import randint
-from time import sleep                                  # Esperar
-# Generación de números aleatorios
-import random
+from time import sleep # Esperar
+import random # Generación de números aleatorios
 
 NUM_HYDROGEN = 4  # Numero de hidrogenos
 NUM_OXYGEN = 2  # Numero de oxigeno
@@ -50,7 +48,7 @@ class hydrogen(threading.Thread):
 
                 hydrogen_union.release()  # Via libre a otros Hydrogenos
 
-                oxygen_wait.release()  # Desbloqueo del Oxigeno
+                oxygen_wait.release()  # Desbloqueo al Oxigeno
                 hydrogens_block.acquire()  # Bloqueo hasta que el Oxigeno acaben
                 hydrogen_wait.release()  # Desbloqueo al primer Hidrogeno
 
@@ -95,7 +93,7 @@ def main():
 
     print(f"Simulacion sintetizacion de H2O")
     # Bloqueamos de semaforos para que empiecen bloqueados
-    hydrogen_wait.acquire()  # Bloqueo del oxigeno
+    hydrogen_wait.acquire()  # Bloqueo al primer Hidrogeno
     hydrogens_block.acquire()  # Bloqueo de los hydrogenos que esperan a Oxigeno
 
     # Cargamos todos los threads en un array
