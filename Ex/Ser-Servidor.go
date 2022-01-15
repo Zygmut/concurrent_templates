@@ -80,9 +80,10 @@ func butler(butler_ear chan Request){
 						log.Printf("%s: Hace sentar a %s en la silla de %s", BUTLER_NAME, DWARF_NAMES[waiting_dwarf], DWARF_NAMES[rq.id] )
 						dwarf_waiting[waiting_dwarf] = 0
 						DWARF_EARS[waiting_dwarf] <- Empty{}
+					}else{
+						avaliable_chairs ++ 
 					}
 				}
-				avaliable_chairs ++ 
 		}
 
 	}
