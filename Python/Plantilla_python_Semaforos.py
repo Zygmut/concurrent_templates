@@ -29,12 +29,12 @@ class Process(threading.Thread):
 
     def run(self):
         global count
+        threading.currentThread().name = type(self).__name__ + "-" + threading.currentThread().name.split("-")[1] # Poner nombre al thread
         logging.debug(f"Tengo que contar {self.to_count} veces")
 
         for i in range(self.to_count):
-            counter_semaphore.acquire()
-            count += 1
-            counter_semaphore.release() 
+            with counter_semaphore:
+                count += 1
         
 
 

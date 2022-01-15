@@ -1,6 +1,6 @@
 import threading            # Generar threads
 import random               # Generar valores aleatorios
-from random import randint  
+from random import randrange  
 import logging              # Debug más elegante
 from time import sleep      # Sleep/Delay
 
@@ -12,14 +12,19 @@ logging.basicConfig(level=logging.DEBUG,
 
 # Constantes 
 NUM_THREADS = 5
+MAX_VEL = 1
+MIN_VEL = 5
 
 class Process(threading.Thread):
 
     def __init__(self):
         super().__init__()
+        self.velocity = randrange(MAX_VEL, MIN_VEL) 
 
     def run(self):
-        logging.debug(f"Init")
+        threading.currentThread().name = type(self).__name__ + "-" + threading.currentThread().name.split("-")[1] # Poner nombre al thread
+        
+        logging.debug(f"Init with vel: {self.velocity}")
 
 
 def main():
