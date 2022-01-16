@@ -1,0 +1,26 @@
+abejas{
+    demanaProduir<- id
+    <-permisProduir
+    counter++;
+    ackEnd <- Empty{}
+}
+
+oso{
+    demanarMenjar <- id
+    <-permisMenjar
+    counter = 0
+    ackEnd <-Emtpy{}
+}
+
+provider {
+    for{
+        id := <- demanaProduir
+        permisProduir <- Empty{}
+        <- ackEnd
+            if(counter == MaxPot){
+                permiMenjar <- empty{}
+            <-ackEnd
+            }
+    }
+
+}
