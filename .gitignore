@@ -1,0 +1,12 @@
+# Ada trash files 
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
+
+# Object files 
+obj/*
+
+# Executables
+*.exe
