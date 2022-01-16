@@ -1,3 +1,5 @@
+#Creado por: PlantanosVerdes
+
 import threading # Generar un int aleatorio
 from random import randint
 from time import sleep # Esperar

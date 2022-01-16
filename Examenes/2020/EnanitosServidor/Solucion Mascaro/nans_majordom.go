@@ -18,7 +18,6 @@ var nom = []string{"Mudet", "Esternuts", "Vergonyós", "Dormilega",
 
 //Problema basado en Servidor:
 //Para cada accion: Peticion - Confirmacion
-
 //Sentarse
 var demanaCadira = make(chan int)
 var permisCadira [Nans]chan Empty //El servidor tiene que saber a quien darle la silla
@@ -122,6 +121,7 @@ func main() {
 	for i := range permisCadira {
 		permisCadira[i] = make(chan Empty)
 	}
+	
 	go majordom()
 	for i := 0; i < Nans; i++ {
 		go nan(nom[i], i, done)

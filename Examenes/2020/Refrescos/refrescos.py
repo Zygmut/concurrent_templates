@@ -1,3 +1,4 @@
+#By PlatanosVerdes
 import threading
 from turtle import width
 import random               # Generar valores aleatorios
@@ -33,14 +34,14 @@ class MaquinaMonitor(object):
     def add_consumidor(self):
         with self.mutex:
             self.clientes += 1
-            #print(f"    Un cliente viene. Clientes: {self.clientes}")
-
 
     #Quitar consumidores
     def delete_consumidor(self):
         with self.mutex:
             self.clientes -= 1
-            #print(f"    Un cliente se va. Clientes: {self.clientes}")
+            #Desbloquear a los reponedores
+            if self.clientes == 0:
+                self.notFull.notifyAll()
     
     #Consumidores
     def get_consumidores(self):
@@ -51,19 +52,17 @@ class MaquinaMonitor(object):
     def take(self):
         with self.mutex:
             #Condicion para saber si la maquina esta vacia
-            while (self.actual_consumiciones == 0): #"Entry"
+            while (self.actual_consumiciones == 0):
                 self.notEmpty.wait() #Esperar a que no este vacio
             #Consumir
             self.actual_consumiciones = self.actual_consumiciones - 1
             #Maquina no esta llena
-            #print(f"{threading.currentThread().name} last notify notFull")
             self.notFull.notify()
 
     #Reponer
     def replenish(self):
         with self.mutex:
-            while (self.actual_consumiciones == self.max_consumiciones) and (self.clientes > 1):
-                print(f"{threading.currentThread().name} waiting..")
+            while (self.actual_consumiciones == self.max_consumiciones) and (self.clientes > 0): #+1 porque si no, da errores
                 self.notFull.wait()
                 
             #Reponer
@@ -110,11 +109,15 @@ class Reponedor(threading.Thread):
 
 def main():
     global maquinaMonitor, clientes, reponedores
+
+    #Monitores
     maquinaMonitor = MaquinaMonitor(MAX_PRODUCTOS)
 
+    #Clientes y reponedores aleatorios
     clientes = randint(MIN_CLIENTES,MAX_CLIENTES)
     reponedores = randint(MIN_REPONEDORES,MAX_REPONEDORES)
 
+    #Array de todos los threads
     threads = []
 
     print(f"En la maquina hay: {clientes} clientes y {reponedores} reponedores")
