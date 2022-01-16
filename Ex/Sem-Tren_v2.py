@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.DEBUG,
 TRAIN_CAPACITY = 4              # Capacidad del tren 
 MIN_TRAIN_TIME = 2              # Tiempo minimo del "tour" 
 MAX_TRAIN_TIME = 5              # Tiempo maximo del "tour"
-NUM_PASSENGERS = 2             # Numero de pasajeros
+NUM_PASSENGERS = 1              # Numero de pasajeros
 
 # Variables
 passengers = []                 # Array de pasajeros 
