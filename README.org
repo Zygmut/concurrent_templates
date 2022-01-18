@@ -1,4 +1,5 @@
 #+title: Plantillas Concurrente 2021-2022
 
 Repositorio de plantillas para interés legitimo y educativo.
+
 EDIT: Para las plantillas de PYTHON el metodo logging.debug tiene a ir lento, por lo que puede ser mejor usar una modificación del print() básico de python
