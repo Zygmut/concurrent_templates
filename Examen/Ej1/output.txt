@@ -1,0 +1,91 @@
+[Kevin-F] Quiero comer y mi velocidad es 5
+[Kevin-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Kevin tiene mesa en el salon 0 de fumadores
+[Kevin-F] Empieza a comer
+[Luis-F] Quiero comer y mi velocidad es 2
+[Luis-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Luis tiene mesa en el salon 0 de fumadores
+[Luis-F] Empieza a comer
+[Aitor-F] Quiero comer y mi velocidad es 4
+[Aitor-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Aitor tiene mesa en el salon 0 de fumadores
+[Aitor-F] Empieza a comer
+[Noah-F] Quiero comer y mi velocidad es 5
+[Noah-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Noah tiene mesa en el salon 1 de fumadores
+[Noah-F] Empieza a comer
+[Marc-F] Quiero comer y mi velocidad es 4
+[Marc-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Marc tiene mesa en el salon 1 de fumadores
+[Marc-F] Empieza a comer
+[Aimar-F] Quiero comer y mi velocidad es 1
+[Aimar-F] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Aimar tiene mesa en el salon 1 de fumadores
+[Aimar-F] Empieza a comer
+[Neus-NF] Quiero comer y mi velocidad es 4
+[Neus-NF] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Neus tiene mesa en el salon 2 de no fumadores
+[Neus-NF] Empieza a comer
+[Elena-NF] Quiero comer y mi velocidad es 2
+[Elena-NF] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Elena tiene mesa en el salon 2 de no fumadores
+[Elena-NF] Empieza a comer
+[Uxia-NF] Quiero comer y mi velocidad es 2
+[Uxia-NF] Pide al camarero una mesa
+[Camarero] El Sr./Sra. Uxia tiene mesa en el salon 2 de no fumadores
+[Uxia-NF] Empieza a comer
+[Nora-NF] Quiero comer y mi velocidad es 5
+[Nora-NF] Pide al camarero una mesa
+[Camarero] Lo siento Nora, no tenemos mesas disponibles para usted ya que es no fumador/a
+[Manuela-NF] Quiero comer y mi velocidad es 1
+[Manuela-NF] Pide al camarero una mesa
+[Camarero] Lo siento Manuela, no tenemos mesas disponibles para usted ya que es no fumador/a
+[Soraya-NF] Quiero comer y mi velocidad es 2
+[Soraya-NF] Pide al camarero una mesa
+[Camarero] Lo siento Soraya, no tenemos mesas disponibles para usted ya que es no fumador/a
+[Aimar-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 1 de fumadores. Quedan 2 comensales
+[Camarero] Espero que haya disfrutado Aimar
+[Luis-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 0 de fumadores. Quedan 2 comensales
+[Camarero] Espero que haya disfrutado Luis
+[Uxia-NF] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 2 comensales
+[Camarero] Espero que haya disfrutado Uxia
+[Camarero] El Sr./Sra. Nora tiene mesa en el salon 2 de no fumadores
+[Nora-NF] Empieza a comer[Elena-NF] He acabado de comer y pido la cuenta
+
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 2 comensales
+[Camarero] Espero que haya disfrutado Elena
+[Camarero] El Sr./Sra. Manuela tiene mesa en el salon 2 de no fumadores
+[Manuela-NF] Empieza a comer
+[Manuela-NF] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 2 comensales
+[Camarero] Espero que haya disfrutado Manuela
+[Camarero] El Sr./Sra. Soraya tiene mesa en el salon 2 de no fumadores
+[Soraya-NF] Empieza a comer
+[Neus-NF] He acabado de comer y pido la cuenta[Marc-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 2 comensales
+
+[Camarero] Espero que haya disfrutado Neus
+[Camarero] Se alibera un sitio en el salon 1 de fumadores. Quedan 1 comensales
+[Camarero] Espero que haya disfrutado Marc
+[Aitor-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 0 de fumadores. Quedan 1 comensales
+[Camarero] Espero que haya disfrutado Aitor
+[Kevin-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 0 de fumadores. Quedan 0 comensales
+[Camarero] El salon 0 queda vacio
+[Camarero] Espero que haya disfrutado Kevin
+[Noah-F] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 1 de fumadores. Quedan 0 comensales
+[Camarero] El salon 1 queda vacio
+[Camarero] Espero que haya disfrutado Noah
+[Soraya-NF] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 1 comensales
+[Camarero] Espero que haya disfrutado Soraya
+End
+[Nora-NF] He acabado de comer y pido la cuenta
+[Camarero] Se alibera un sitio en el salon 2 de no fumadores. Quedan 0 comensales
+[Camarero] El salon 2 queda vacio
+[Camarero] Espero que haya disfrutado Nora

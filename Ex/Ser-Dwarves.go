@@ -87,7 +87,6 @@ func butler(butler_ear chan Request){
 		}
 
 	}
-
 }
 
 func dwarf(id int, done chan int, butler chan Request){

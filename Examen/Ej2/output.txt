@@ -1,0 +1,68 @@
+2022/01/17 13:45:43 2 de nigiri de salmon
+2022/01/17 13:45:43 9 de sashimi de atun
+2022/01/17 13:45:43 1 de maki de cangrejo
+2022/01/17 13:45:43 3 de sashimi de anguila
+2022/01/17 13:45:43 3 de nigiri de trucha
+2022/01/17 13:45:43 [Jorge] Vengo a comer sushi y mi velocidad es: 1
+2022/01/17 13:45:43 len clien: 0
+2022/01/17 13:45:43 [Jorge] Coge un nigiri de salmon, quedan 1
+2022/01/17 13:45:43 len clien: 0
+2022/01/17 13:45:43 [Pau] Vengo a comer sushi y mi velocidad es: 1
+2022/01/17 13:45:43 [Pablo] Vengo a comer sushi y mi velocidad es: 1
+2022/01/17 13:45:43 [Alberto] Vengo a comer sushi y mi velocidad es: 1
+2022/01/17 13:45:43 [Alberto] Coge un sashimi de atun, quedan 8
+2022/01/17 13:45:44 len clien: 1
+2022/01/17 13:45:44 [Jorge] Coge un nigiri de trucha, quedan 2
+2022/01/17 13:45:44 len clien: 0
+2022/01/17 13:45:45 len clien: 0
+2022/01/17 13:45:45 [Jorge] Coge un nigiri de trucha, quedan 1
+2022/01/17 13:45:45 len clien: 0
+2022/01/17 13:45:45 [Alberto] Coge un maki de cangrejo, quedan 0
+2022/01/17 13:45:45 [Alberto] Ha cogido el ultimo maki de cangrejo
+2022/01/17 13:45:46 len clien: 0
+2022/01/17 13:45:46 [Alberto] Coge un sashimi de anguila, quedan 2
+2022/01/17 13:45:46 [Jorge] Coge un sashimi de atun, quedan 7
+2022/01/17 13:45:46 len clien: 1
+2022/01/17 13:45:47 len clien: 1
+2022/01/17 13:45:47 [Alberto] Coge un nigiri de salmon, quedan 0
+2022/01/17 13:45:47 [Alberto] Ha cogido el ultimo nigiri de salmon
+2022/01/17 13:45:47 [Jorge] Coge un sashimi de anguila, quedan 1
+2022/01/17 13:45:47 len clien: 1
+2022/01/17 13:45:48 len clien: 0
+2022/01/17 13:45:48 [Jorge] Coge un sashimi de atun, quedan 6
+2022/01/17 13:45:48 len clien: 0
+2022/01/17 13:45:48 [Alberto] Coge un nigiri de trucha, quedan 0
+2022/01/17 13:45:48 [Alberto] Ha cogido el ultimo nigiri de trucha
+2022/01/17 13:45:49 len clien: 1
+2022/01/17 13:45:49 [Jorge] Coge un sashimi de anguila, quedan 0
+2022/01/17 13:45:49 [Jorge] Ha cogido el ultimo sashimi de anguila
+2022/01/17 13:45:49 len clien: 0
+2022/01/17 13:45:50 len clien: 0
+2022/01/17 13:45:50 [Alberto] Coge un sashimi de atun, quedan 5
+2022/01/17 13:45:50 [Jorge] Coge un sashimi de atun, quedan 4
+2022/01/17 13:45:50 len clien: 1
+2022/01/17 13:45:51 len clien: 0
+2022/01/17 13:45:51 [Jorge] Coge un sashimi de atun, quedan 3
+2022/01/17 13:45:51 len clien: 0
+2022/01/17 13:45:51 [Alberto] Coge un sashimi de atun, quedan 2
+2022/01/17 13:45:52 len clien: 1
+2022/01/17 13:45:52 [Jorge] Coge un sashimi de atun, quedan 1
+2022/01/17 13:45:52 len clien: 0
+2022/01/17 13:45:53 len clien: 0
+2022/01/17 13:45:53 [Alberto] Coge un sashimi de atun, quedan 0
+2022/01/17 13:45:53 [Alberto] Ha cogido el ultimo sashimi de atun
+2022/01/17 13:45:53 ME voy Alberto
+panic: invalid argument to Intn
+
+goroutine 7 [running]:
+math/rand.(*Rand).Intn(0x3552b9, 0xf)
+	D:/Program Files/Go/src/math/rand/rand.go:168 +0x65
+math/rand.Intn(...)
+	D:/Program Files/Go/src/math/rand/rand.go:337
+main.Cliente.func1()
+	c:/Users/ruben/Documents/Github/concurrent_templates/Examen/Ej2/Cena_de_sushi.go:120 +0x12b
+main.Cliente(0x1, 0xc00001a300)
+	c:/Users/ruben/Documents/Github/concurrent_templates/Examen/Ej2/Cena_de_sushi.go:150 +0x153
+created by main.main
+	c:/Users/ruben/Documents/Github/concurrent_templates/Examen/Ej2/Cena_de_sushi.go:171 +0x298
+exit status 2
