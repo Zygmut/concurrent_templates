@@ -1,1 +1,0 @@
-Compilar sin GNAT STUDIO: gnatmake main.adb | .\main.exe

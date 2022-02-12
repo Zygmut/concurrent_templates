@@ -1,3 +1,0 @@
-#+title: Plantillas Concurrente
-
-Repositorio de plantillas para interés legitimo y educativo.
