@@ -1,0 +1,5 @@
+#+title: Plantillas Concurrente
+
+Repositorio de plantillas para interés legitimo y educativo. En caso de copiar codigo se recomienda citar al autor ya que podrías estar cometiendo fraude.
+
+Un saludo!
