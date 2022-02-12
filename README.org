@@ -1,5 +1,7 @@
-#+title: Plantillas Concurrente
+#+title: Plantillas Concurrente 2021-2022
 
-Repositorio de plantillas para interés legitimo y educativo. En caso de copiar codigo se recomienda citar al autor ya que podrías estar cometiendo fraude.
+*SI VAIS A UTILIZAR ESTAS PLANTILLAS, ACORDAOS DE CITARNOS YA QUE PUEDE SER PLAGIO Y OS PODEIS METER EN LIOS POR FRAUDE :)*
 
-Un saludo!
+Repositorio de plantillas para interés legitimo y educativo.
+
+EDIT: Para las plantillas de PYTHON el metodo logging.debug tiende a ir lento, por lo que puede ser mejor usar una modificación del print() básico de python
