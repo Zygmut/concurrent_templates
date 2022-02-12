@@ -3,6 +3,7 @@
 En este repositorio podrás ver varios ejercicios/exámenes y plantillas la mayoría hechos por mí. Pero cabe mencionar que algunos están hechos por compañeros y alguno que otro por el profesor. Todos ellos resuelven problemas de concurrencia dados por un ejercicio de la materia Programación Concurrente.
 
 Este repositorio es para interés legítimo y educativo. 
+
 ⚠ En caso de copiar código se recomienda citar al autor, ya que podrías estar cometiendo fraude.⚠
 
 ¡Un saludo!
